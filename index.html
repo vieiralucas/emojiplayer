@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      font-size: 24px;
+      background: #000;
+    }
+
+    #form {
+      width: 800px;
+      margin: auto;
+      margin-bottom: 80px;
+      color: #ffffff;
+    }
+
+    input {
+      width: 400px;
+      height: 40px;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100px;
+      height: 45px;
+      border-radius: 5px;
+      background: #ffffff;
+    }
+
+    #emoji-board {
+      width: 800px;
+      margin: auto;
+      background: #000000;
+    }
+
+    span {
+      margin: 5px;
+      opacity: 0.5;
+    }
+
+    .row {
+      width: 40px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="form">
+    <input id="input" type="text" placeholder="Insert soundcloud url here">
+    <button id="btn">play</button>
+  </div>
+  <div id="emoji-board">
+    <div id="1" class="row">
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+    </div>
+    <div id="2" class="row">
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+      <span>😁</span>
+    </div>
+    <div id="3" class="row">
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+      <span>😂</span>
+    </div>
+    <div id="4" class="row">
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+      <span>😅</span>
+    </div>
+    <div id="5" class="row">
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+    </div>
+    <div id="6" class="row">
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+      <span>😇</span>
+    </div>
+    <div id="7" class="row">
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+      <span>😍</span>
+    </div>
+    <div id="8" class="row">
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+      <span>😜</span>
+    </div>
+    <div id="9" class="row">
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+      <span>🤑</span>
+    </div>
+    <div id="10" class="row">
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+      <span>🤓</span>
+    </div>
+    <div id="11" class="row">
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+      <span>😎</span>
+    </div>
+    <div id="12" class="row">
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+      <span>🙄</span>
+    </div>
+    <div id="13" class="row">
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+    </div>
+    <div id="14" class="row">
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+      <span>💩</span>
+    </div>
+    <div id="15" class="row">
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+      <span>😡</span>
+    </div>
+    <div id="16" class="row">
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+      <span>😱</span>
+    </div>
+    <div id="17" class="row">
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+      <span>😭</span>
+    </div>
+    <div id="18" class="row">
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+      <span>😀</span>
+    </div>
+    <div id="19" class="row">
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+      <span>🤐</span>
+    </div>
+    <div id="20" class="row">
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+      <span>😤</span>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
